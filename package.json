@@ -1,0 +1,31 @@
+{
+  "name": "size-limit-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "limit": "npx size-limit --json"
+  },
+  "size-limit": [
+    {
+      "path": "./src/index.js",
+      "limit": "10 ms"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/19Qingfeng/size-limit-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/19Qingfeng/size-limit-demo/issues"
+  },
+  "homepage": "https://github.com/19Qingfeng/size-limit-demo#readme",
+  "devDependencies": {
+    "@size-limit/file": "^4.3.1",
+    "@size-limit/time": "^4.3.1",
+    "size-limit": "^4.3.1"
+  }
+}
