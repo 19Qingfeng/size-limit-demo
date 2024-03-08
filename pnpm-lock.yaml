@@ -11,10 +11,12 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   rollup: ^4.12.1
+  rollup-plugin-node-externals: ^6.1.2
   rollup-plugin-typescript2: ^0.36.0
   size-limit: ^4.3.1
 
 dependencies:
+  react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
@@ -25,8 +27,8 @@ devDependencies:
   '@size-limit/time': 4.12.0_size-limit@4.12.0
   '@types/react': 18.2.64
   '@types/react-dom': 18.2.21
-  react: 18.2.0
   rollup: 4.12.1
+  rollup-plugin-node-externals: 6.1.2_rollup@4.12.1
   rollup-plugin-typescript2: 0.36.0_rollup@4.12.1
   size-limit: 4.12.0
 
@@ -1077,6 +1079,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
 
   /read-pkg-up/7.0.1:
     resolution: {integrity: sha1-86YTV1hFlzOuK5VjgFbhhU5+9Qc=, tarball: read-pkg-up/download/read-pkg-up-7.0.1.tgz}
@@ -1140,6 +1143,15 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rollup-plugin-node-externals/6.1.2_rollup@4.12.1:
+    resolution: {integrity: sha1-wyi4agDz4CEaO60uBhbi/x+lW2w=, tarball: rollup-plugin-node-externals/download/rollup-plugin-node-externals-6.1.2.tgz}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      rollup: ^3.0.0 || ^4.0.0
+    dependencies:
+      rollup: 4.12.1
     dev: true
 
   /rollup-plugin-typescript2/0.36.0_rollup@4.12.1:
