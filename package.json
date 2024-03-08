@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rollup -c ./rollup.config.mjs",
     "limit": "npx size-limit --json"
   },
   "size-limit": [
@@ -24,8 +25,19 @@
   },
   "homepage": "https://github.com/19Qingfeng/size-limit-demo#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/rollup-darwin-arm64": "^4.12.0",
     "@size-limit/file": "^4.3.1",
     "@size-limit/time": "^4.3.1",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "rollup": "^4.12.1",
+    "rollup-plugin-typescript2": "^0.36.0",
     "size-limit": "^4.3.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
